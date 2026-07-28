@@ -14,17 +14,21 @@
 
 <header>
     <nav>
-        <div>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <button id="themeToggle">🌙</button>
+        <div class="nav-links">
+            <button class="nav-link active" data-section="hero">Home</button>
+            <button class="nav-link" data-section="projects">Projects</button>
+            <button class="nav-link" data-section="experience">Experience</button>
+            <button class="nav-link" data-section="skills">Skills</button>
+            <button class="nav-link" data-section="education">Education</button>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
         </div>
     </nav>
 </header>
 
 
-<section class="hero">
+<main>
+
+<section id="hero" class="hero content-section active">
 
 <div class="hero-content">
 
@@ -52,7 +56,26 @@
 </section>
 
 
-<section id="education">
+<section id="about" class="content-section home-section active">
+
+<div class="home-letter">
+<h3>About Me</h3>
+
+<p>My name is Shaiju Rajan, and I am currently working as a Junior Software Developer at NuOrigin Systems Inc. I am interested in this opportunity and believe my education and professional experience align well with your team's needs.</p>
+
+<p>I recently graduated from Temple University with a Bachelor's degree in Information Science and Technology and previously earned an Associate's degree in Computer Science from the Community College of Philadelphia. My education provided me with a strong foundation in software development, database systems, and full-stack application development.</p>
+
+<p>At NuOrigin Systems Inc., I develop and maintain enterprise applications by building features for authentication, user access management, organizations, applications, roles, policies, claims, and system monitoring. My responsibilities include designing and developing RESTful APIs, implementing business logic, working with SQL Server databases, troubleshooting application issues, and enhancing existing functionality to support business requirements.</p>
+
+<p>Through my professional experience, I have gained hands-on experience with C#, <a href="https://dotnet.microsoft.com/apps/aspnet" target="_blank" rel="noopener noreferrer">ASP.NET Core MVC</a>, RESTful Web APIs, third-party AI APIs, SQL Server, Git, and Agile development. I enjoy learning new technologies, solving technical challenges, and building reliable applications.</p>
+
+<p>Thank you for your time and consideration. I would appreciate the opportunity to discuss how my skills and experience can contribute to your team. I look forward to hearing from you.</p>
+</div>
+
+</section>
+
+
+<section id="education" class="content-section">
 
 <h2>Education</h2>
 
@@ -85,7 +108,7 @@
 </section>
 
 
-<section id="skills">
+<section id="skills" class="content-section">
 
 <h2>Technical Skills</h2>
 
@@ -196,22 +219,21 @@
 </section>
 
 
-<section id="experience">
+<section id="experience" class="content-section">
 
 <h2>Experience</h2>
     <!-- W1 -->
 <div class="card">
-<h3>NuOrigin Systems Inc</h3>
+<h3>NuOrigin System Inc</h3>
 <h4>Junior Application Developer</h4>
 <p>Franklin, TN | April 2026 - Present</p>
 <ul>
-<li>Full-stack development of web applications using ASP.NET Core and .NET MAUI while collaborating with team members to build and maintain scalable applications.</li>
-<li>Follow Agile practices to develop applications based on client requirements and work closely with project managers and product owners to meet project specifications.</li>
-<li>Analyze user needs and develop software solutions while recommending software upgrades to improve operational efficiency.</li>
-<li>Review existing codebases and follow established coding standards and best practices to design and optimize code.</li>
-<li>Develop and integrate Web APIs, SQL Server databases, and third-party systems while using Git for version control and collaboration</li>
-<li>Create flowcharts, user guides, and technical documentation for programming tasks, processes, and procedures.</li>
-<li>Perform routine software maintenance, debugging, and troubleshooting for existing applications</li>
+<li>Develop enterprise web applications using ASP.NET Core, .NET 10, C#, Entity Framework Core, SQL Server, Razor, JavaScript, Bootstrap, Kendo UI, and .NET MAUI.</li>
+<li>Design and integrate RESTful APIs, third-party services, SQL Server databases, stored procedures, and Entity Framework Core data models.</li>
+<li>Develop full-stack features based on client requirements while collaborating with project managers, product owners, and development teams in an Agile environment.</li>
+<li>Analyze requirements, implement scalable software solutions, refactor existing code, and apply software design principles and coding best practices.</li>
+<li>Troubleshoot production issues, debug applications, optimize performance, and implement enhancements for existing systems.</li>
+<li>Create technical documentation, user guides, flowcharts, and participate in code reviews to improve application quality and maintainability.</li>
 </ul>
 </div>
     <!-- W2 -->
@@ -221,7 +243,7 @@
 <p>Warminster, PA | August 2025 – February 2025</p>
 <ul>
 <li>Compliance with federal laws; worked quickly in a fast-paced environment requiring multitasking, problem-solving, and critical thinking.</li>
-<li>Maintain knowledge of acceptable employment documents and accurate and secure documentation practice.</li>
+<li>Maintain knowledge of  acceptable employment documents and accurate and secure documentation practice.</li>
 <li>Collaborated in real time with team members to resolve inconsistence, demonstrating attention to details, and ensuring strict data security, regulatory compliance, and federal privacy standers.</li>
 </ul>
 </div>
@@ -240,7 +262,7 @@
 </section>
 
 
-<section id="projects">
+<section id="projects" class="content-section">
 
 <h2>Projects</h2>
 
@@ -332,6 +354,8 @@
 </div>
 
 </section>
+
+</main>
 
 
 

@@ -17,6 +17,56 @@ if(btn){
 }
 
 
+// Left nav section switching
+
+const navLinks = document.querySelectorAll(".nav-link[data-section]");
+const contentSections = document.querySelectorAll(".content-section");
+const homeSectionIds = ["hero", "about"];
+
+const showSection = function(sectionId){
+
+    if(!sectionId){
+        return;
+    }
+
+    contentSections.forEach(section => {
+
+        const isHomeView = sectionId === "hero" && homeSectionIds.includes(section.id);
+        const isActive = isHomeView || section.id === sectionId;
+        section.classList.toggle("active", isActive);
+
+    });
+
+    navLinks.forEach(link => {
+
+        const isActive = link.dataset.section === sectionId;
+        link.classList.toggle("active", isActive);
+
+    });
+
+};
+
+
+if(navLinks.length && contentSections.length){
+
+    navLinks.forEach(link => {
+
+        link.addEventListener("click", function(){
+
+            const sectionId = this.dataset.section;
+            showSection(sectionId);
+            window.location.hash = sectionId;
+
+        });
+
+    });
+
+    showSection("hero");
+    window.location.hash = "hero";
+
+}
+
+
 
 
 // Project Read More / Show Less
